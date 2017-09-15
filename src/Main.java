@@ -8,6 +8,8 @@ public class Main {
         text.transport();
         email.printText();
         text.printText();
+        Object emailNotificationClone = email.clone();
+        
 
 
         }
