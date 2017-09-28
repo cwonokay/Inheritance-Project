@@ -53,6 +53,7 @@ public class EmailNotification extends Notification {
 
     @Override
     protected Object clone() {
-        return new EmailNotification(this.getSubject(), this.getBody(), this.getRecipient(), this.getSmtpProvider());
+        EmailNotification newEmail = new EmailNotification(this.getSubject(), this.getBody(), this.getRecipient(), this.getSmtpProvider());
+        return newEmail;
     }
 }
